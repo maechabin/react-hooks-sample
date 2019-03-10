@@ -48,7 +48,7 @@ function useFormInput(initialValue: string): FormInput {
 function useDocumentTitle(title: string): void {
   useEffect(() => {
     document.title = title;
-  });
+  }, [title]);
 }
 
 function useWindowWidth(): number {
